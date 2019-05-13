@@ -3,10 +3,112 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div class="container">
+      <header class="default-header">
+          <div class="header-logo-text">
+            <h2>DEVICE</h2>
+          </div>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <form>
+                <label for="search"></label>
+                <input class="default-search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
+                <button class="default-search-btn" type="submit">Найти</button>
+              </form>
+            </li>
+            <li>
+              <div class="user-login-default">
+                <a class="user-login-button-default">Войти</a>
+              </div>
+            </li>
+            <li>
+              <div class="compare-button-default">Сравнить</div>
+            </li>
+            <li>
+              <div class="checkout-button-default">Корзина</div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="secondary-navigation-default">
+          <ul>
+            <li>
+              <div class="catalog-button-default">Каталог товаров</div>
+                <div class="catalog-container-hidden">
+                  <ul>
+                    <!-- место под выпадающий список -->
+                  </ul>
+                </div>
+            </li>
+            <li>
+              <div class="delivery-default-default">Доставка</div>
+            </li>
+            <li>
+              <div class="warranty-default">Гарантия</div>
+            </li>
+            <li>
+              <div class="contacts">Контакты</div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <main>
+      <section class="about">
+        <h3>О нас</h3>
+        <div class="about-description">
+          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+        </div>
+        <ul class="delivery-partners-list">
+          <li>Деловые Линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <a class="main-about-us-button">Подробнее о нас</a>
+      </section>
+      <section class="main-contacts">
+        <h3>Контакты</h3>
+          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бываает.</p>
+        <img src="./img/map_contacts_562x224.png" alt="РФ, г. Москва, ул. Строителей, дом 15" width="562" height="224">
+        <a class="main-contact-us-button">Напишите нам</a>
+      </section>
+    </main>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+    <footer>
+      <div class="logo-footer-text">
+        <h2>DEVICE</h2>
+      </div>
+      <nav class="footer-navigation">
+        <ul>
+          <li class="footer-button-login">Войти</li>
+          <li class="footer-button-compare">Сравнить</li>
+          <li class="footer-button-checkout">Корзина</li>
+        </ul>
+      </nav>
+      <div class="footer-address">
+        <address>г. Москва, ул. Строителей, 15</address>
+      </div>
+      <div class="footer-misc-actions">
+        <a href="#">Доставка</a>
+        <a href="#">Гарантия</a>
+        <a href="#">Контакты</a>
+      </div>
+      <div class="footer-phone">
+        <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+      </div>
+      <div class="footer-social-links">
+        <a href="https://facebook.com/">Facebook</a>
+        <a href="https://instagram.com/">Instagram</a>
+        <a href="https://twitter.com/">Twitter</a>
+      </div>
+      <div class="html-academy-logo">
+        <a href="https://htmlacademy.ru/">HTML Academy</a>
+      </div>
+    </footer>
   </body>
 </html>

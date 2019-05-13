@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс [Каталог]</title>
+</head>
+<body>
+  <div class="container">
+    <header class="default-header">
+      <div class="header-logo-text">
+        <h2>DEVICE</h2>
+      </div>
+      <nav class="main-navigation">
+        <ul>
+          <li>
+            <form>
+              <input class="default-search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
+              <button class="default-search-btn" type="submit">Найти</button>
+            </form>
+          </li>
+          <li>
+            <div class="user-logged-default">
+              <div class="username">Валентин Петухов</div>
+              <a class="user-logout-button-default">Выйти</a>
+            </div>
+          </li>
+          <li>
+            <div class="compare-button-default">Сравнить</div>
+          </li>
+          <li>
+            <div class="checkout-button-default">Корзина</div>
+          </li>
+        </ul>
+      </nav>
+      <nav class="secondary-navigation-default">
+        <ul>
+          <li>
+            <div class="catalog-button-default">Каталог товаров</div>
+            <div class="catalog-container-hidden">
+              <ul>
+                <!-- место под выпадающий список -->
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="delivery-default-default">Доставка</div>
+          </li>
+          <li>
+            <div class="warranty-default">Гарантия</div>
+          </li>
+          <li>
+            <div class="contacts">Контакты</div>
+          </li>
+        </ul>
+      </nav>
+      <h3>Моноподы для селфи</h3>
+      <div class="catalog-list-route">
+        <ul>
+          <li>Главная</li>
+          <li>
+            <ul>
+              <li>Каталог товаров</li>
+              <li>
+                <ul>
+                  <li>Моноподы для селфи</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+  </div>
+  <main>
+    <div class="filters">
+      <p class="filter-category">Цвет</p>
+      <ul class="filter-options">
+        <li>
+            <label>
+              <input type="checkbox" name="a" value="black" checked>
+            </label>Черный
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="a" value="white">
+          </label>Белый
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="a" value="blue" checked>
+          </label>Синий
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="a" value="red" checked>
+          </label>Красный
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="a" value="pink">
+          </label>Розовый
+        </li>
+      </ul>
+      <hr align="left" width="150" size="2" color="black" /> <!-- хз как сделать линию - сделаю пока так -->
+      <p class="filter-category">Bluetooth</p>
+      <ul>
+        <li>
+          <p><label>
+            <input type="checkbox" name="a" value="yes" checked>
+          </label>Есть</p>
+        </li>
+        <li>
+          <p><label>
+            <input type="checkbox" name="a" value="no" checked>
+          </label>Нет</p>
+        </li>
+      </ul>
+      <button class="filter-results">Показать</button>
+    </div>
+    <section>
+      <div class="items-photo-desc">
+        <img src="./img/items_360x380.png" alt="Любительская селфи-палка" width="360" height="380">
+        <p class="items-desc">Любительская селфи-палка</p> <p class="price">500 руб.</p>
+      </div>
+      <div class="items-photo-desc">
+        <img src="./img/items_360x380.png" alt="Любительская селфи-палка" width="360" height="380">
+        <p class="items-desc">Профессиональная селфи-палка</p> <p class="price">1 500 руб.</p>
+      </div>
+      <div class="items-photo-desc">
+        <img src="./img/items_360x380.png" alt="Любительская селфи-палка" width="360" height="380">
+        <p class="items-desc">Непотопляемая селфи-палка</p> <p class="price">2 500 руб.</p>
+      </div>
+      <div class="items-photo-desc">
+        <img src="./img/items_360x380.png" alt="Любительская селфи-палка" width="360" height="380">
+        <p class="items-desc">Селфи-палка "Следуй за мной"</p> <p class="price">4 900 руб.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="logo-footer-text">
+      <h2>DEVICE</h2>
+    </div>
+    <nav class="footer-navigation">
+      <ul>
+        <li class="footer-button-logged-in">
+          <div class="user-logged-default">
+            <div class="username">Валентин Петухов</div>
+            <a class="user-logout-button-default">Выйти</a>
+          </div>
+        </li>
+        <li class="footer-button-compare">Сравнить</li>
+        <li class="footer-button-checkout">Корзина</li>
+      </ul>
+    </nav>
+    <div class="footer-address">
+      <address>г. Москва, ул. Строителей, 15</address>
+    </div>
+    <div class="footer-misc-actions">
+      <a href="#">Доставка</a>
+      <a href="#">Гарантия</a>
+      <a href="#">Контакты</a>
+    </div>
+    <div class="footer-phone">
+      <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+    </div>
+    <div class="footer-social-links">
+      <a href="https://facebook.com/">Facebook</a>
+      <a href="https://instagram.com/">Instagram</a>
+      <a href="https://twitter.com/">Twitter</a>
+    </div>
+    <div class="html-academy-logo">
+      <a href="https://htmlacademy.ru/">HTML Academy</a>
+    </div>
+  </footer>
+</body>
+</html>
