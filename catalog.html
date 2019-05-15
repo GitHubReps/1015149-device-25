@@ -2,40 +2,36 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Девайс [Каталог]</title>
+  <title>HTML Academy: Девайс</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <div class="container">
-    <header class="default-header">
-      <div class="header-logo-text">
-        <h2>DEVICE</h2>
+    <header class="page-header">
+      <div class="page-header-logo">
+        <a><img src="./img/logo-header.svg" alt="DEVICE" width="163" height="35"/></a>
       </div>
-      <nav class="main-navigation">
+
+    <section class="page-header-misc">
+      <form>
+        <label for="search"></label>
+        <input class="default-search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
+        <button class="default-search-btn" type="submit">Найти</button>
+      </form>
+      <div class="user-logged-in">
+        <div class="username">Валентин Петухов</div>
+        <a class="user-logout-button">Выйти</a>
+      </div>
+      <div class="compare-button">Сравнить</div>
+      <div class="checkout-button">Корзина</div>
+    </section>
+
+      <nav class="catalog-header">
         <ul>
           <li>
-            <form>
-              <input class="default-search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
-              <button class="default-search-btn" type="submit">Найти</button>
-            </form>
-          </li>
-          <li>
-            <div class="user-logged-default">
-              <div class="username">Валентин Петухов</div>
-              <a class="user-logout-button-default">Выйти</a>
-            </div>
-          </li>
-          <li>
-            <div class="compare-button-default">Сравнить</div>
-          </li>
-          <li>
-            <div class="checkout-button-default">Корзина</div>
-          </li>
-        </ul>
-      </nav>
-      <nav class="secondary-navigation-default">
-        <ul>
-          <li>
-            <div class="catalog-button-default">Каталог товаров</div>
+            <div class="catalog-button">Каталог товаров</div>
             <div class="catalog-container-hidden">
               <ul>
                 <!-- место под выпадающий список -->
@@ -43,10 +39,10 @@
             </div>
           </li>
           <li>
-            <div class="delivery-default-default">Доставка</div>
+            <div class="delivery-default">Доставка</div>
           </li>
           <li>
-            <div class="warranty-default">Гарантия</div>
+            <div class="warranty">Гарантия</div>
           </li>
           <li>
             <div class="contacts">Контакты</div>
@@ -119,40 +115,40 @@
       <button class="filter-results">Показать</button>
     </div>
     <section>
-      <div class="items-photo-desc">
-        <img src="./img/items_360x380.png" alt="Любительская селфи-палка" width="360" height="380">
-        <p class="items-desc">Любительская селфи-палка</p> <p class="price">500 руб.</p>
-      </div>
-      <div class="items-photo-desc">
-        <img src="./img/items_360x380.png" alt="Любительская селфи-палка" width="360" height="380">
-        <p class="items-desc">Профессиональная селфи-палка</p> <p class="price">1 500 руб.</p>
-      </div>
-      <div class="items-photo-desc">
-        <img src="./img/items_360x380.png" alt="Любительская селфи-палка" width="360" height="380">
-        <p class="items-desc">Непотопляемая селфи-палка</p> <p class="price">2 500 руб.</p>
-      </div>
-      <div class="items-photo-desc">
-        <img src="./img/items_360x380.png" alt="Любительская селфи-палка" width="360" height="380">
-        <p class="items-desc">Селфи-палка "Следуй за мной"</p> <p class="price">4 900 руб.</p>
-      </div>
+      <ul>
+        <li class="items-photo-desc">
+          <img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
+          <p class="items-desc">Любительская селфи-палка</p> <p class="price">500 руб.</p>
+        </li>
+        <li class="items-photo-desc">
+          <img src="./img/item-2.jpg" alt="Любительская селфи-палка" width="360" height="380">
+          <p class="items-desc">Профессиональная селфи-палка</p> <p class="price">1 500 руб.</p>
+        </li>
+        <li class="items-photo-desc">
+          <img src="./img/item-3.jpg" alt="Любительская селфи-палка" width="360" height="380">
+          <p class="items-desc">Непотопляемая селфи-палка</p> <p class="price">2 500 руб.</p>
+        </li>
+        <li class="items-photo-desc">
+          <img src="./img/item-4.jpg" alt="Любительская селфи-палка" width="360" height="380">
+          <p class="items-desc">Селфи-палка "Следуй за мной"</p> <p class="price">4 900 руб.</p>
+        </li>
+      </ul>
     </section>
   </main>
   <footer>
-    <div class="logo-footer-text">
-      <h2>DEVICE</h2>
+    <div class="page-footer-logo">
+      <a><img src="./img/logo-footer.svg" alt="DEVICE" width="163" height="35"/></a>
     </div>
-    <nav class="footer-navigation">
-      <ul>
-        <li class="footer-button-logged-in">
-          <div class="user-logged-default">
+    <section class="footer-misc">
+        <div class="footer-button-logged-in">
+          <div class="user-logged-in">
             <div class="username">Валентин Петухов</div>
-            <a class="user-logout-button-default">Выйти</a>
+            <a class="user-logout-button">Выйти</a>
           </div>
-        </li>
-        <li class="footer-button-compare">Сравнить</li>
-        <li class="footer-button-checkout">Корзина</li>
-      </ul>
-    </nav>
+        </div>
+        <div class="footer-button-compare">Сравнить</div>
+        <div class="footer-button-checkout">Корзина</div>
+    </section>
     <div class="footer-address">
       <address>г. Москва, ул. Строителей, 15</address>
     </div>
