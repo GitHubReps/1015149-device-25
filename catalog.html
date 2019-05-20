@@ -14,41 +14,69 @@
         <a><img src="./img/logo-header.svg" alt="DEVICE" width="163" height="35"/></a>
       </div>
 
-    <section class="page-header-misc">
-      <form>
-        <label for="search"></label>
-        <input class="default-search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
-        <button class="default-search-btn" type="submit">Найти</button>
-      </form>
-      <div class="user-logged-in">
-        <div class="username">Валентин Петухов</div>
-        <a class="user-logout-button">Выйти</a>
-      </div>
-      <div class="compare-button">Сравнить</div>
-      <div class="checkout-button">Корзина</div>
-    </section>
+      <section class="container">
+        <header class="page-header">
+          <div class="page-header-logo">
+            <a><img src="./img/logo-device.svg" alt="DEVICE" width="163" height="35"/></a>
+          </div>
+          <nav class="main-navigation">
+            <ul>
+              <li>
+                <div class="search-img">
+                  <img src="./img/search.svg" alt="Поиск по сайту" height="16" width="16"/>
+                </div>
+                <form>
+                  <label for="search"></label>
+                  <input class="search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
+                </form>
+              </li>
+              <li>
+                <div class="header-user-login">
+                  <img src="./img/user.svg" alt="Личный кабинет" width="13" height="12"/>
+                  <p class="username">Валентин Петухов</p>
+                  <a class="user-logout-link" href="#">Выйти</a>
+                </div>
+              </li>
+              <li>
+                <div class="header-compare">
+                  <img src="./img/compare.svg" alt="Сравнить" width="10" height="10"/>
+                  <a class="compare-header-link" href="#">Сравнить</a>
+                </div>
+              </li>
+              <li>
+                <div class="header-checkout">
+                  <img src="./img/cart.svg" alt="Корзина" width="12" height="12"/>
+                  <a class="compare-header-link" href="#">Сравнить</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <nav class="secondary-navigation-default">
+            <ul>
+              <li>
+                <div class="catalog-button-default">
+                  <a href="./catalog.html">Каталог товаров<img src="./img/plus.svg" alt="Каталог товаров" width="16" height="16"/></a>
+                </div>
+                <div class="catalog-container-hidden">
+                  <ul>
+                    <!-- место под выпадающий список -->
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="delivery-default-default">Доставка</div>
+              </li>
+              <li>
+                <div class="warranty-default">Гарантия</div>
+              </li>
+              <li>
+                <div class="contacts">Контакты</div>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </section>
 
-      <nav class="catalog-header">
-        <ul>
-          <li>
-            <div class="catalog-button">Каталог товаров</div>
-            <div class="catalog-container-hidden">
-              <ul>
-                <!-- место под выпадающий список -->
-              </ul>
-            </div>
-          </li>
-          <li>
-            <div class="delivery-default">Доставка</div>
-          </li>
-          <li>
-            <div class="warranty">Гарантия</div>
-          </li>
-          <li>
-            <div class="contacts">Контакты</div>
-          </li>
-        </ul>
-      </nav>
       <h3>Моноподы для селфи</h3>
       <div class="catalog-list-route">
         <ul>
@@ -102,13 +130,13 @@
       <p class="filter-category">Bluetooth</p>
       <ul>
         <li>
-          <p><label>
-            <input type="checkbox" name="a" value="yes" checked>
+          <p><label for="yes">
+            <input type="radio" id="yes" checked>
           </label>Есть</p>
         </li>
         <li>
-          <p><label>
-            <input type="checkbox" name="a" value="no" checked>
+          <p><label for="no">
+            <input type="radio" id="no">
           </label>Нет</p>
         </li>
       </ul>
@@ -139,16 +167,29 @@
     <div class="page-footer-logo">
       <a><img src="./img/logo-footer.svg" alt="DEVICE" width="163" height="35"/></a>
     </div>
-    <section class="footer-misc">
-        <div class="footer-button-logged-in">
-          <div class="user-logged-in">
-            <div class="username">Валентин Петухов</div>
-            <a class="user-logout-button">Выйти</a>
+    <nav class="footer-navigation">
+      <ul>
+        <li>
+          <div class="footer-user-logot">
+            <img src="./img/user.svg" alt="Личный кабинет" width="13" height="12"/>
+            <p class="username">Валентин Петухов</p>
+            <a class="user-logout-link" href="#">Выйти</a>
           </div>
-        </div>
-        <div class="footer-button-compare">Сравнить</div>
-        <div class="footer-button-checkout">Корзина</div>
-    </section>
+        </li>
+        <li>
+          <div class="footer-compare">
+            <img src="./img/compare.svg" alt="Сравнить" width="10" height="10"/>
+            <a class="compare-header-link" href="#">Сравнить</a>
+          </div>
+        </li>
+        <li>
+          <div class="footer-checkout">
+            <img src="./img/cart.svg" alt="Корзина" width="12" height="12"/>
+            <a class="compare-header-link" href="#">Сравнить</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
     <div class="footer-address">
       <address>г. Москва, ул. Строителей, 15</address>
     </div>
@@ -161,12 +202,16 @@
       <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
     </div>
     <div class="footer-social-links">
-      <a href="https://facebook.com/">Facebook</a>
-      <a href="https://instagram.com/">Instagram</a>
-      <a href="https://twitter.com/">Twitter</a>
+      <a href="https://facebook.com"><img src="./img/fb.svg" alt="Facebook" width="32" height="32"/></a>
+      <span class="visually-hidden">Facebook</span>
+      <a href="https://instagram.com"><img src="./img/instagram.svg" alt="Instagram" width="32" height="32"/></a>
+      <span class="visually-hidden">Instagram</span>
+      <a href="https://twitter.com"><img src="./img/twitter.svg" alt="Twitter" width="32" height="32"/></a>
+      <span class="visually-hidden">Twitter</span>
     </div>
-    <div class="html-academy-logo">
-      <a href="https://htmlacademy.ru/">HTML Academy</a>
+    <div class="html-academy-footer-logo">
+      <a href="https://htmlacademy.ru/"><img src="./img/logo-html.svg" alt="HTML Academy" width="27" height="34"></a>
+      <span class="visually-hidden">HTML Academy</span>
     </div>
   </footer>
 </body>

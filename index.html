@@ -8,30 +8,39 @@
   </head>
 
   <body>
-    <div class="container">
-      <header class="default-header">
-          <div class="header-logo-text">
-            <h2>DEVICE</h2>
-          </div>
+    <section class="container">
+      <header class="page-header">
+        <div class="page-header-logo">
+          <a><img src="./img/logo-device.svg" alt="DEVICE" width="163" height="35"/></a>
+        </div>
         <nav class="main-navigation">
           <ul>
             <li>
+              <div class="search-img">
+                <img src="./img/search.svg" alt="Поиск по сайту" height="16" width="16"/>
+              </div>
               <form>
                 <label for="search"></label>
-                <input class="default-search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
-                <button class="default-search-btn" type="submit">Найти</button>
+                <input class="search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
               </form>
             </li>
             <li>
-              <div class="user-login-default">
-                <a class="user-login-button-default">Войти</a>
+              <div class="header-user-login">
+                <img src="./img/user.svg" alt="Личный кабинет" width="13" height="12"/>
+                <a class="user-login-link" href="#">Войти</a>
               </div>
             </li>
             <li>
-              <div class="compare-button-default">Сравнить</div>
+              <div class="header-compare">
+                <img src="./img/compare.svg" alt="Сравнить" width="10" height="10"/>
+                <a class="compare-header-link" href="#">Сравнить</a>
+              </div>
             </li>
             <li>
-              <div class="checkout-button-default">Корзина</div>
+              <div class="header-checkout">
+                <img src="./img/cart.svg" alt="Корзина" width="12" height="12"/>
+                <a class="compare-header-link" href="#">Сравнить</a>
+              </div>
             </li>
           </ul>
         </nav>
@@ -39,7 +48,7 @@
           <ul>
             <li>
               <div class="catalog-button-default">
-                <a href="./catalog.html">Каталог товаров</a>
+                <a href="./catalog.html">Каталог товаров<img src="./img/plus.svg" alt="Каталог товаров" width="16" height="16"/></a>
               </div>
                 <div class="catalog-container-hidden">
                   <ul>
@@ -59,7 +68,7 @@
           </ul>
         </nav>
       </header>
-    </div>
+    </section>
 
     <main>
       <section class="about">
@@ -84,14 +93,29 @@
     </main>
 
     <footer>
-      <div class="logo-footer-text">
-        <h2>DEVICE</h2>
+      <div class="page-footer-logo">
+        <a><img src="./img/logo-footer.svg" alt="DEVICE" width="163" height="35"/></a>
       </div>
       <nav class="footer-navigation">
         <ul>
-          <li class="footer-button-login">Войти</li>
-          <li class="footer-button-compare">Сравнить</li>
-          <li class="footer-button-checkout">Корзина</li>
+          <li>
+            <div class="footer-user-login">
+              <img src="./img/user.svg" alt="Личный кабинет" width="13" height="12"/>
+              <a class="user-login-link" href="#">Войти</a>
+            </div>
+          </li>
+          <li>
+            <div class="footer-compare">
+              <img src="./img/compare.svg" alt="Сравнить" width="10" height="10"/>
+              <a class="compare-header-link" href="#">Сравнить</a>
+            </div>
+          </li>
+          <li>
+            <div class="footer-checkout">
+              <img src="./img/cart.svg" alt="Корзина" width="12" height="12"/>
+              <a class="compare-header-link" href="#">Сравнить</a>
+            </div>
+          </li>
         </ul>
       </nav>
       <div class="footer-address">
@@ -106,17 +130,17 @@
         <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       </div>
       <div class="footer-social-links">
-        <a href="https://facebook.com/">Facebook</a>
-        <a href="https://instagram.com/">Instagram</a>
-        <a href="https://twitter.com/">Twitter</a>
+        <a href="https://facebook.com"><img src="./img/fb.svg" alt="Facebook" width="32" height="32"/></a>
+        <span class="visually-hidden">Facebook</span>
+        <a href="https://instagram.com"><img src="./img/instagram.svg" alt="Instagram" width="32" height="32"/></a>
+        <span class="visually-hidden">Instagram</span>
+        <a href="https://twitter.com"><img src="./img/twitter.svg" alt="Twitter" width="32" height="32"/></a>
+        <span class="visually-hidden">Twitter</span>
       </div>
-      <div class="html-academy-logo">
-        <a href="https://htmlacademy.ru/">HTML Academy</a>
+      <div class="html-academy-footer-logo">
+        <a href="https://htmlacademy.ru/"><img src="./img/logo-html.svg" alt="HTML Academy" width="27" height="34"></a>
+        <span class="visually-hidden">HTML Academy</span>
       </div>
     </footer>
-  <div class="left_tag">
-    <p>Nothing to do here...</p>
-  </div>
   </body>
-<!-- I am test -->
 </html>
