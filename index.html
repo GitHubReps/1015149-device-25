@@ -91,8 +91,8 @@
         <a class="main-contact-us-button">Напишите нам</a>
       </section>
     </main>
-
     <footer>
+
       <div class="page-footer-logo">
         <a><img src="./img/logo-footer.svg" alt="DEVICE" width="163" height="35"/></a>
       </div>
@@ -142,5 +142,38 @@
         <span class="visually-hidden">HTML Academy</span>
       </div>
     </footer>
+
+    <section class="popup-contact-us">
+      <h2 class="visually hidden">Форма обратной связи</h2>
+        <div class="popup-form-set">
+          <form class="popup-form" method="POST">
+            <div class="popup-input-name">
+              <label for="popup-username">Ваше имя:</label>
+              <input type="text" id="popup-username" name="username" placeholder="Имя Фамилия">
+            </div>
+            <div class="popup-input-email">
+              <label for="popup-email">Ваш e-mail:</label>
+              <input type="text" id="popup-email" name="email" placeholder="email@example.com">
+            </div>
+            <div class="popup-input-text">
+              <label for="popup-text">Текст письма:</label>
+              <input type="text" id="popup-text" name="text-input" placeholder="В свободной форме">
+            </div>
+            <button class="btn-submit" type="submit">Отправить</button>
+          </form>
+          <button class="popup-contact-us-close" type="button">
+             <span class="visually-hidden">Закрыть</span>
+          </button>
+        </div>
+    </section>
+
+    <section class="popup-map">
+      <div class="popup-map-set">
+        <img src="./img/map.jpg" width="560" height="222" alt="Расположение магазина">
+        <button class="popup-map-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </div>
+    </section>
   </body>
 </html>
