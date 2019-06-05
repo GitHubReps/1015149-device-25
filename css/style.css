@@ -1,0 +1,647 @@
+
+@font-face {
+  font-weight: 800;
+  font-family: "Gilroy";
+  font-style: normal;
+
+  src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+  url('../fonts/gilroyextrabold.woff') format('woff');
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: "Gilroy";
+  font-style: normal;
+
+  src: url('../fonts/gilroylight.woff2') format('woff2'),
+  url('../fonts/gilroylight.woff') format('woff');
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 40px 0 0;
+  overflow-x: hidden;
+
+  font-weight: 300;
+  font-size: 15px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #464646;
+  
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  position: relative;
+  display: block;
+  padding: 0;
+  width: 220px;
+  height: 40px;
+
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  color: #000000;
+
+  border: none;
+  background: none;
+
+}
+
+.button:hover {
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(240, 197, 46, 1);
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 299px;
+  background-color: rgba(240, 197, 46, 0.5);
+  margin: 40px 140px;
+
+}
+
+.main-navigation {
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #000000;
+  justify-content: space-between;
+}
+
+.main-navigation .list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.main-navigation .list .list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-navigation .list .list-item a {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #000000;
+}
+
+.search-input {
+  border-width: 0;
+  box-sizing: border-box;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.3);
+  background: transparent;
+}
+
+.secondary-navigation {
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #000000;
+  justify-content: space-between;
+}
+
+.secondary-navigation .list {
+  width: auto;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.secondary-navigation .list .list-item {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-align: left;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.secondary-navigation a {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-align: left;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.main-section {
+  margin: 40px 140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.about {
+  width: 560px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding-right: 140px;
+}
+
+.about h3, .main-contacts h3 {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.02;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #000000;
+}
+
+.about-description p {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #464646;
+}
+
+.delivery-partners-list {
+  font-family: "Gilroy", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 2.5;
+  color: #000000;
+}
+
+.main-contacts {
+  width: 560px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.page-footer {
+  background-color: #464646;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+}
+
+.footer-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-navigation .list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-navigation .list .list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-navigation .list-item a {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.4;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-misc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-misc address, .footer-misc a {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: right;
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-misc-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-misc-actions a {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-align: left;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-yellow-line {
+  display: flex;
+  flex-direction: row;
+  width: 80px;
+  color: #ffc600;
+  border-top: 7px solid #ffc600;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.footer-social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.html-academy-footer-logo {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+
+
+
+
+.popup-contact-us {
+  display: none;
+  width: 960px;
+  height: 553px;
+  box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
+}
+
+.popup-contact-us-close {
+  width: 55px;
+  height: 55px;
+  background: url('../img/modal-close.svg') no-repeat;
+  justify-content: end;
+}
+
+.popup-form-set {
+  margin: 0;
+}
+.popup-form-set label {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.popup-form-set input[type=text] {
+  width: 360px;
+  height: 50px;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(70, 70, 70, 0.4);
+  background-color: rgba(229, 229, 229, 0.5);
+  border-width: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.popup-input-text input[type=text] {
+  width: 760px;
+  height: 156px;
+}
+
+.popup-form-set label {
+  display: inline-block;
+}
+
+
+.popup-map {
+  display: none;
+}
+
+.breadcrumbs-section h3 {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.02;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #000000;
+  padding: 0 140px;
+}
+
+ul.breadcrumbs {
+  padding: 30px 140px;
+  list-style: none;
+}
+
+ul.breadcrumbs li {
+  display: inline;
+}
+
+ul.breadcrumbs li+li:before {
+  padding: 15px;
+  content: url("../img/nav-arrow.svg");
+}
+
+ul.breadcrumbs li a {
+  text-decoration: none;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+ul.breadcrumbs li a:hover {
+  text-decoration: none;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-catalog-filter .list-item {
+  list-style: none;
+}
+
+.catalog-container-hidden {
+  display: flex;
+}
+
+.catalog-menu-hidden ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-menu-hidden li {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.catalog-menu-hidden-left a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.4;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #000000;
+  text-transform: capitalize;
+}
+
+.catalog-menu-hidden-center a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.4;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #000000;
+  text-transform: capitalize;
+}
+
+.catalog-menu-hidden-right a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.4;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #000000;
+  text-transform: capitalize;
+}
+
+.main-catalog-filter-option {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #000000;
+}
+
+.main-catalog-filter .list-item {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.86;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #000000;
+}
+
+.goods-to-sale {
+  display: flex;
+}
+
+.items-photo-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.items-price {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #464646;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.items-desc {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #000000;
+  display: inline-flex;
+}
+
+.username-footer {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-navigation .list-item > .footer-user-login > .user-logout-link {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.3);
+}

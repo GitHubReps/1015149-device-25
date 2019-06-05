@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -11,142 +12,158 @@
     <section class="container">
       <header class="page-header">
         <div class="page-header-logo">
-          <a><img src="./img/logo-device.svg" alt="DEVICE" width="163" height="35"/></a>
+          <a class="logo-link-image"><img src="./img/logo-device.svg" alt="DEVICE" width="163" height="35"/></a>
         </div>
         <nav class="main-navigation">
-          <ul>
-            <li>
+          <ul class="main-navigation list">
+            <li class="main-navigation list-item">
               <div class="search-img">
                 <img src="./img/search.svg" alt="Поиск по сайту" height="16" width="16"/>
               </div>
-              <form>
+              <form class="header-search" method="get" action="https://echo.htmlacademy.ru">
                 <label for="search"></label>
                 <input class="search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
               </form>
             </li>
-            <li>
+            <li class="main-navigation list-item">
               <div class="header-user-login">
                 <img src="./img/user.svg" alt="Личный кабинет" width="13" height="12"/>
-                <a class="user-login-link" href="#">Войти</a>
+                <a href="#">Войти</a>
               </div>
             </li>
-            <li>
+            <li class="main-navigation list-item">
               <div class="header-compare">
                 <img src="./img/compare.svg" alt="Сравнить" width="10" height="10"/>
-                <a class="compare-header-link" href="#">Сравнить</a>
+                <a href="#">Сравнить</a>
               </div>
             </li>
-            <li>
+            <li class="main-navigation list-item">
               <div class="header-checkout">
                 <img src="./img/cart.svg" alt="Корзина" width="12" height="12"/>
-                <a class="compare-header-link" href="#">Сравнить</a>
+                <a href="#">Корзина</a>
               </div>
             </li>
           </ul>
         </nav>
-        <nav class="secondary-navigation-default">
-          <ul>
-            <li>
-              <div class="catalog-button-default">
+        <nav class="secondary-navigation">
+          <ul class="secondary-navigation list">
+            <li class="secondary-navigation list-item">
+              <div class="catalog-navigation">
                 <a href="./catalog.html">Каталог товаров<img src="./img/plus.svg" alt="Каталог товаров" width="16" height="16"/></a>
               </div>
-                <div class="catalog-container-hidden">
+                <div class="catalog-navigation list">
                   <ul>
                     <!-- место под выпадающий список -->
                   </ul>
                 </div>
             </li>
-            <li>
-              <div class="delivery-default-default">Доставка</div>
+            <li class="secondary-navigation list-item">
+              <a href="#">Доставка</a>
             </li>
-            <li>
-              <div class="warranty-default">Гарантия</div>
+            <li class="secondary-navigation list-item">
+              <a href="#">Гарантия</a>
             </li>
-            <li>
-              <div class="contacts">Контакты</div>
+            <li class="secondary-navigation list-item">
+              <a href="#">Контакты</a>
             </li>
           </ul>
         </nav>
       </header>
     </section>
 
-    <main>
+    <main class="main-section">
       <section class="about">
         <h3>О нас</h3>
         <div class="about-description">
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
         </div>
-        <ul class="delivery-partners-list">
+        <ul type="circle" class="delivery-partners-list">
           <li>Деловые Линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a class="main-about-us-button">Подробнее о нас</a>
+        <a class="button" href="#">Подробнее о нас</a>
       </section>
       <section class="main-contacts">
         <h3>Контакты</h3>
-          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бываает.</p>
+          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <img src="./img/map.jpg" alt="РФ, г. Москва, ул. Строителей, дом 15" width="560" height="222">
-        <a class="main-contact-us-button">Напишите нам</a>
+        <a class="button" href="#">Напишите нам</a>
       </section>
     </main>
-    <footer>
 
-      <div class="page-footer-logo">
-        <a><img src="./img/logo-footer.svg" alt="DEVICE" width="163" height="35"/></a>
-      </div>
-      <nav class="footer-navigation">
-        <ul>
-          <li>
+    <footer class="page-footer">
+        <ul class="footer-navigation list">
+          <li class="footer-navigation list-item">
+            <div class="page-footer logo">
+              <a><img src="./img/logo-footer.svg" alt="DEVICE" width="163" height="35"/></a>
+            </div>
+          </li>
+          <li class="footer-navigation list-item">
             <div class="footer-user-login">
-              <img src="./img/user.svg" alt="Личный кабинет" width="13" height="12"/>
-              <a class="user-login-link" href="#">Войти</a>
+              <img src="./img/user-yellow.svg" alt="Личный кабинет" width="13" height="12"/>
+              <a href="#">Войти</a>
             </div>
           </li>
-          <li>
+          <li class="footer-navigation list-item">
             <div class="footer-compare">
-              <img src="./img/compare.svg" alt="Сравнить" width="10" height="10"/>
-              <a class="compare-header-link" href="#">Сравнить</a>
+              <img src="./img/compare-yellow.svg" alt="Сравнить" width="10" height="10"/>
+              <a href="#">Сравнить</a>
             </div>
           </li>
-          <li>
+          <li class="footer-navigation list-item">
             <div class="footer-checkout">
-              <img src="./img/cart.svg" alt="Корзина" width="12" height="12"/>
-              <a class="compare-header-link" href="#">Сравнить</a>
+              <img src="./img/cart-yellow.svg" alt="Корзина" width="12" height="12"/>
+              <a href="#">Корзина</a>
             </div>
           </li>
         </ul>
-      </nav>
-      <div class="footer-address">
-        <address>г. Москва, ул. Строителей, 15</address>
-      </div>
-      <div class="footer-misc-actions">
-        <a href="#">Доставка</a>
-        <a href="#">Гарантия</a>
-        <a href="#">Контакты</a>
-      </div>
-      <div class="footer-phone">
-        <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-      </div>
-      <div class="footer-social-links">
-        <a href="https://facebook.com"><img src="./img/fb.svg" alt="Facebook" width="32" height="32"/></a>
-        <span class="visually-hidden">Facebook</span>
-        <a href="https://instagram.com"><img src="./img/instagram.svg" alt="Instagram" width="32" height="32"/></a>
-        <span class="visually-hidden">Instagram</span>
-        <a href="https://twitter.com"><img src="./img/twitter.svg" alt="Twitter" width="32" height="32"/></a>
-        <span class="visually-hidden">Twitter</span>
-      </div>
-      <div class="html-academy-footer-logo">
-        <a href="https://htmlacademy.ru/"><img src="./img/logo-html.svg" alt="HTML Academy" width="27" height="34"></a>
-        <span class="visually-hidden">HTML Academy</span>
-      </div>
+      <section class="footer-misc">
+        <div class="footer-address">
+          <address>г. Москва, ул. Строителей, 15</address>
+        </div>
+        <div class="footer-misc-actions">
+          <a href="#">Доставка</a>
+          <a href="#">Гарантия</a>
+          <a href="#">Контакты</a>
+        </div>
+        <div class="footer-phone">
+          <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+        </div>
+      </section>
+      <section class="footer-bottom">
+        <div class="footer-yellow-line"></div>
+        <div class="footer-social-links">
+          <a href="https://facebook.com"><img src="./img/fb.svg" alt="Facebook" width="32" height="32"/></a>
+          <span class="visually-hidden">Facebook</span>
+          <a href="https://instagram.com"><img src="./img/instagram.svg" alt="Instagram" width="32" height="32"/></a>
+          <span class="visually-hidden">Instagram</span>
+          <a href="https://twitter.com"><img src="./img/twitter.svg" alt="Twitter" width="32" height="32"/></a>
+          <span class="visually-hidden">Twitter</span>
+        </div>
+        <div class="html-academy-footer-logo">
+          <a href="https://htmlacademy.ru/"><img src="./img/logo-html.svg" alt="HTML Academy" width="27" height="34"></a>
+          <span class="visually-hidden">HTML Academy</span>
+        </div>
+      </section>
     </footer>
 
+
+
+
+
+
+
+
+
     <section class="popup-contact-us">
-      <h2 class="visually hidden">Форма обратной связи</h2>
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+        <button class="popup-contact-us-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
         <div class="popup-form-set">
-          <form class="popup-form" method="POST">
+          <form class="popup-form" method="POST" action="https://echo.htmlacademy.ru">
             <div class="popup-input-name">
               <label for="popup-username">Ваше имя:</label>
               <input type="text" id="popup-username" name="username" placeholder="Имя Фамилия">
@@ -159,11 +176,8 @@
               <label for="popup-text">Текст письма:</label>
               <input type="text" id="popup-text" name="text-input" placeholder="В свободной форме">
             </div>
-            <button class="btn-submit" type="submit">Отправить</button>
+            <button class="button" type="submit">Отправить</button>
           </form>
-          <button class="popup-contact-us-close" type="button">
-             <span class="visually-hidden">Закрыть</span>
-          </button>
         </div>
     </section>
 
