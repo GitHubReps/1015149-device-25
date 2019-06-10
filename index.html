@@ -16,41 +16,28 @@
         </div>
         <nav class="main-navigation">
           <ul class="main-navigation list">
-            <li class="main-navigation list-item">
-              <div class="search-img">
-                <img src="./img/search.svg" alt="Поиск по сайту" height="16" width="16"/>
-              </div>
+            <li class="main-navigation list-item-search">
               <form class="header-search" method="get" action="https://echo.htmlacademy.ru">
-                <label for="search"></label>
                 <input class="search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
+                <label class="search-label" for="search"></label>
+                  <span class="visually-hidden">Поиск</span>
               </form>
             </li>
-            <li class="main-navigation list-item">
-              <div class="header-user-login">
-                <img src="./img/user.svg" alt="Личный кабинет" width="13" height="12"/>
+            <li class="main-navigation list-item-login">
                 <a href="#">Войти</a>
-              </div>
             </li>
-            <li class="main-navigation list-item">
-              <div class="header-compare">
-                <img src="./img/compare.svg" alt="Сравнить" width="10" height="10"/>
+            <li class="main-navigation list-item-compare">
                 <a href="#">Сравнить</a>
-              </div>
             </li>
-            <li class="main-navigation list-item">
-              <div class="header-checkout">
-                <img src="./img/cart.svg" alt="Корзина" width="12" height="12"/>
+            <li class="main-navigation list-item-checkout">
                 <a href="#">Корзина</a>
-              </div>
             </li>
           </ul>
         </nav>
         <nav class="secondary-navigation">
           <ul class="secondary-navigation list">
-            <li class="secondary-navigation list-item">
-              <div class="catalog-navigation">
-                <a href="./catalog.html">Каталог товаров<img src="./img/plus.svg" alt="Каталог товаров" width="16" height="16"/></a>
-              </div>
+            <li class="secondary-navigation catalog-item">
+                <a href="./catalog.html">Каталог товаров</a>
                 <div class="catalog-navigation list">
                   <ul>
                     <!-- место под выпадающий список -->
