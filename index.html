@@ -70,7 +70,10 @@
           </div>
         </header>
     </section>
-
+    <div class="container">
+      <h3>Я просто устал (завтра перепишу и допишу) потому вот так (чисто чтоб было удобнее проверять, я уже упоролся -_-):</h3>
+    <button class="openContactPopupButton">Тык и вылетит контактная форма >_<</button> <button class="openMapPopupButton">Тык и вылетит карта >_<</button>
+    </div>
     <main class="main-section">
       <div class="container">
         <section class="main-section-information">
@@ -160,22 +163,23 @@
 
     <section class="popup-contact-us">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-        <button class="popup-contact-us-close" type="button">
+        <button class="popup-contact-us-close close-contact" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <div class="popup-form-set">
           <form class="popup-form" method="POST" action="https://echo.htmlacademy.ru">
-            <div class="popup-input-name">
+            <div class="popup-input-name popup-contact-setting">
               <label for="popup-username">Ваше имя:</label>
               <input type="text" id="popup-username" name="username" placeholder="Имя Фамилия">
             </div>
-            <div class="popup-input-email">
+            <div class="popup-input-email popup-contact-setting">
               <label for="popup-email">Ваш e-mail:</label>
               <input type="text" id="popup-email" name="email" placeholder="email@example.com">
             </div>
             <div class="popup-input-text">
               <label for="popup-text">Текст письма:</label>
-              <input type="text" id="popup-text" name="text-input" placeholder="В свободной форме">
+              <textarea id="popup-text" name="text-input" placeholder="В свободной форме">
+              </textarea>
             </div>
             <button class="button" type="submit">Отправить</button>
           </form>
@@ -184,11 +188,12 @@
 
     <section class="popup-map">
       <div class="popup-map-set">
-        <img src="./img/map.jpg" width="560" height="222" alt="Расположение магазина">
-        <button class="popup-map-close" type="button">
+        <img src="img/map-big-jpg" width="960" height="559" alt="Расположение магазина">
+        <button class="popup-map-close close-map" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
       </div>
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
