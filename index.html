@@ -5,7 +5,7 @@
     <title>HTML Academy: Девайс</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
 
   <body>
@@ -161,9 +161,9 @@
           <li class="goods-to-buy-item">
             <a class="goods-to-buy-link" href="#">
               <div class="main-goods-content">
-                <img class="goods-to-buy-image" src="./img/popular-2.svg" alt="Selfie" width="86" height="117">
+                <img class="selfie-stick" src="./img/popular-2.svg" alt="Selfie" width="86" height="117">
               </div>
-              <p class="goods-to-buy-desc">Моноподы для селфи</p>
+              <p class="goods-to-buy-desc selfie-stick-desc">Моноподы для селфи</p>
             </a>
           </li>
           <li class="goods-to-buy-item">
@@ -281,7 +281,7 @@
           <section class="main-information-contacts-area">
             <h3>Контакты</h3>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-            <a class="main-information-map" href="#">
+            <a class="main-information-map openMapPopupButton" href="#">
               <img class="openMapPopupButton" src="img/map.jpg" alt="г. Москва, ул. Строителей, 15" width="560" height="222">
             </a>
             <a class="button contacts-button" href="#">Напишите нам</a>
@@ -327,12 +327,9 @@
       <section class="footer-bottom">
         <div class="footer-yellow-line"></div>
         <div class="footer-social-links">
-          <a href="https://facebook.com"><img src="./img/fb.svg" alt="Facebook" width="32" height="32"/></a>
-          <span class="visually-hidden">Facebook</span>
-          <a href="https://instagram.com"><img src="./img/instagram.svg" alt="Instagram" width="32" height="32"/></a>
-          <span class="visually-hidden">Instagram</span>
-          <a href="https://twitter.com"><img src="./img/twitter.svg" alt="Twitter" width="32" height="32"/></a>
-          <span class="visually-hidden">Twitter</span>
+          <a class="facebook-icon" href="https://facebook.com" alt="Наш Facebook"></a>
+          <a class="instagram-icon" href="https://instagram.com" alt="Наш Instagram"></a>
+          <a class="twitter-icon" href="https://twitter.com" alt="Наш Twitter"></a>
         </div>
         <div class="html-academy-footer-logo">
           <a href="https://htmlacademy.ru/"><img src="./img/logo-html.svg" alt="HTML Academy" width="27" height="34"></a>
@@ -370,12 +367,12 @@
 
     <section class="popup-map">
       <div class="popup-map-set">
-        <img src="img/map-big-jpg" width="960" height="559" alt="Расположение магазина">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa66456ea39837efbba95f3cc0857e65f87e094951c41a5d6f965b5d269021322&amp;source=constructor" style="border:0" width="960" height="559"></iframe>
         <button class="popup-map-close close-map" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
       </div>
     </section>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
